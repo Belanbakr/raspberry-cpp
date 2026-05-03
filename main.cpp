@@ -1,7 +1,20 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
 
 int main() {
-    cout << "Hello GitHub!" << endl;
+    string cardID;
+
+    cout << "Scan your card: ";
+    cin >> cardID;
+
+    if (cardID == "12345") {
+        cout << "Access Granted ✔" << endl;
+    } else {
+        cout << "Access Denied ❌" << endl;
+    }
+
     return 0;
 }
+
